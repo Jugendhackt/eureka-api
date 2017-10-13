@@ -15,6 +15,12 @@ var Event = graphql.Field{
 		},
 	},
 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-		return models.Event{"hello", "FD", time.Now(), "DE"}, nil
+		return models.Event{
+			time.Now(),
+			"hello",
+			"Munich",
+			"ergreg",
+			time.Now(),
+			"DE"}, nil
 	},
 }

@@ -7,6 +7,9 @@ import (
 var User = graphql.NewObject(graphql.ObjectConfig{
 	Name: "User",
 	Fields: graphql.Fields{
+		"joinDate": &graphql.Field{
+			Type: graphql.DateTime,
+		},
 		"emailAddress": &graphql.Field{
 			Type: graphql.String,
 		},

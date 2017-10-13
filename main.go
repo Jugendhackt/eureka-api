@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"github.com/graphql-go/graphql"
 	"./gql/queries"
+	"./gql/mutations"
 	"github.com/graphql-go/graphql/gqlerrors"
 	"fmt"
 	"encoding/json"
@@ -14,6 +15,7 @@ func main() {
 
 	schema, _ := graphql.NewSchema(graphql.SchemaConfig{
 		Query: queries.Root,
+		Mutation: mutations.Root,
 	})
 
 	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {

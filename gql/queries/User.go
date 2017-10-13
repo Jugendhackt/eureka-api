@@ -4,6 +4,7 @@ import (
 	"github.com/graphql-go/graphql"
 	"../../models"
 	gqlModels "../models"
+	"time"
 )
 
 var User = graphql.Field{
@@ -14,6 +15,6 @@ var User = graphql.Field{
 		},
 	},
 	Resolve: func(p graphql.ResolveParams) (interface{}, error) {
-		return models.User{"A", "A", "A", 5},  nil
+		return models.User{time.Now(), "A", "A", "A", 500},  nil
 	},
 }

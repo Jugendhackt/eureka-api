@@ -9,6 +9,6 @@ The API made for Eureka applications, such as the one for [iOS]().
 ### Dependencies
 * [GraphQL](github.com/graphql-go/graphql) (by graphql-go)
 ### Event
-This API has been developed as part of the Jugend hackt event in Tokyo.
+This API has been developed as part of the [Jugend hackt](http://jugendhackt.de) event in Tokyo.
 
 ## License
