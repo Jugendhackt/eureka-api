@@ -9,9 +9,13 @@ import (
 	"github.com/graphql-go/graphql/gqlerrors"
 	"fmt"
 	"encoding/json"
+	"github.com/joho/godotenv"
+	"log"
 )
 
 func main() {
+	err := godotenv.Load()
+	if err != nil { log.Fatalln(err) }
 
 	schema, _ := graphql.NewSchema(graphql.SchemaConfig{
 		Query: queries.Root,
