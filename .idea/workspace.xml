@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="312d3965-19fb-4535-b083-274f293c3038" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gql/models/Event.go" afterPath="$PROJECT_DIR$/gql/models/Event.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gql/models/User.go" afterPath="$PROJECT_DIR$/gql/models/User.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gql/mutations/Event.go" afterPath="$PROJECT_DIR$/gql/mutations/Event.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gql/mutations/User.go" afterPath="$PROJECT_DIR$/gql/mutations/User.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gql/queries/Event.go" afterPath="$PROJECT_DIR$/gql/queries/Event.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gql/queries/Root.go" afterPath="$PROJECT_DIR$/gql/queries/Root.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gql/queries/User.go" afterPath="$PROJECT_DIR$/gql/queries/User.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Event.go" afterPath="$PROJECT_DIR$/models/Event.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/User.go" afterPath="$PROJECT_DIR$/models/User.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Event.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Event.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Event.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -61,14 +50,16 @@
       <file leaf-file-name="Event.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gql/queries/Event.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding>
+                <element signature="e#17#166#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Root.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Root.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gql/queries/Root.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -173,13 +164,13 @@
         <option value="$PROJECT_DIR$/gql/queries/User.go" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/gql/mutations/User.go" />
-        <option value="$PROJECT_DIR$/gql/queries/Root.go" />
-        <option value="$PROJECT_DIR$/gql/queries/Event.go" />
         <option value="$PROJECT_DIR$/gql/models/User.go" />
         <option value="$PROJECT_DIR$/gql/models/Event.go" />
         <option value="$PROJECT_DIR$/gql/mutations/Event.go" />
         <option value="$PROJECT_DIR$/models/User.go" />
         <option value="$PROJECT_DIR$/models/Event.go" />
+        <option value="$PROJECT_DIR$/gql/queries/Event.go" />
+        <option value="$PROJECT_DIR$/gql/queries/Root.go" />
       </list>
     </option>
   </component>
@@ -191,7 +182,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="30" />
-    <option name="y" value="37" />
+    <option name="y" value="36" />
     <option name="width" value="1393" />
     <option name="height" value="802" />
   </component>
@@ -306,7 +297,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="37" width="1393" height="802" extended-state="0" />
+    <frame x="30" y="36" width="1393" height="802" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2045944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -366,7 +357,7 @@
         <state relative-caret-position="132">
           <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
-            <element signature="e#14#216#0" expanded="true" />
+            <element signature="e#14#216#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -412,14 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gql/queries/Root.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gql/models/User.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -448,14 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gql/queries/Event.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gql/mutations/Event.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -473,6 +448,24 @@
           <folding>
             <element signature="e#16#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gql/queries/Event.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="e#17#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gql/queries/Root.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
