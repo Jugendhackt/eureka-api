@@ -22,7 +22,7 @@ func main() {
 		Mutation: mutations.Root,
 	})
 
-	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
+	http.HandleFunc("/graphql", func(writer http.ResponseWriter, request *http.Request) {
 		buf := new(bytes.Buffer)
 		buf.ReadFrom(request.Body)
 

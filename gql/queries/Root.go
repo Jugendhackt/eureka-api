@@ -9,6 +9,6 @@ var Root = graphql.NewObject(graphql.ObjectConfig{
 	Fields: graphql.Fields{
 		"user": &User,
 
-		"event": &Event,
+		//"event": &Event,
 	},
 })

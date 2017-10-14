@@ -7,6 +7,9 @@ import (
 var Event = graphql.NewObject(graphql.ObjectConfig{
 	Name: "Event",
 	Fields: graphql.Fields{
+		"id": &graphql.Field{
+			Type: graphql.String,
+		},
 		"creationDate": &graphql.Field{
 			Type: graphql.DateTime,
 		},

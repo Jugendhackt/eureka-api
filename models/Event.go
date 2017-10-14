@@ -3,11 +3,11 @@ package models
 import "time"
 
 type Event struct {
-	CreationTime time.Time `json:"creationTime"`
-	CreatorId string `json:"creatorId"`
-	Place string `json:"place"`
-	ActivityId string `json:"activityId"` // Id
-	Time time.Time `json:"time"`
-	Lang string `json:"lang"`
+	Id			string		`bson:"_id" json:"id"`
+	CreationDate time.Time `bson:"creationDate" json:"creationDatte"`
+	CreatorId    string    `bson:"creatorId" json:"creatorId"`
+	Place        string    `bson:"place" json:"place"`
+	ActivityId   string    `bson:"activityId" json:"activityId"`
+	Time         time.Time `bson:"time" json:"time"`
+	Lang         string    `bson:"lang" json:"lang"`
 }
-

@@ -10,6 +10,7 @@ import (
 	"log"
 	"../../helpers"
 	"gopkg.in/mgo.v2/bson"
+	"golang.org/x/crypto/bcrypt"
 )
 
 var CreateUser = graphql.Field{
@@ -18,16 +19,25 @@ var CreateUser = graphql.Field{
 		"emailAddress": &graphql.ArgumentConfig{
 			Type: graphql.NewNonNull(graphql.String),
 		},
+		"password": &graphql.ArgumentConfig{
+			Type: graphql.NewNonNull(graphql.String),
+		},
 	},
 	Resolve: func(params graphql.ResolveParams) (interface{}, error) {
-
 		// TODO: Validate if email is correct
 		mail, isOk := params.Args["emailAddress"].(string)
-
 		if !isOk { return nil, fmt.Errorf("mail couldn't be turned into a string")}
-		user := models.User{JoinDate: time.Now(), EmailAddress: mail,  ExperiencePoints: 500}
 
-		// TODO: Insert in database.
+		password, isOk := params.Args["password"].(string)
+		if !isOk { return nil, fmt.Errorf("password couldn't be turned into a string") }
+
+		pwBytes := []byte(password)
+		hashPw ,err := bcrypt.GenerateFromPassword(pwBytes, bcrypt.DefaultCost)
+		if err != nil { return nil, fmt.Errorf("password couldn't be bcrypted") }
+
+		i := bson.NewObjectId()
+		user := models.User{Id: i.String(), JoinDate: time.Now(), EmailAddress: mail, Password: string(hashPw), ExperiencePoints: 500}
+
 		helpers.SetUpDb(func(db *mgo.Database) {
 			err := db.C("users").Insert(&user)
 			if err != nil { log.Fatalf("%v", err) }
