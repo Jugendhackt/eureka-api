@@ -5,7 +5,7 @@ The API made for Eureka applications, such as the one for [iOS]().
 ## Authors
 * [Luke Mueller](http://github.com/luki)
 
-## Related Repositores
+## Related Repositories
 * [iOS Application](https://github.com/jugendhackt/eureka-ios)
 
 ## Honorable Mentions

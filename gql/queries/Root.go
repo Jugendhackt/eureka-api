@@ -10,5 +10,6 @@ var Root = graphql.NewObject(graphql.ObjectConfig{
 		"user": &User,
 
 		"event": &Event,
+		"events": &Events,
 	},
 })
