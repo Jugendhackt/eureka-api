@@ -1,6 +1,6 @@
 # Eureka API
 
-The API made for Eureka applications, such as the one for [iOS]().
+The API made for Eureka applications, such as the one for [iOS](https://github.com/Jugendhackt/eureka-ios).
 
 ## Authors
 * [Luke Mueller](http://github.com/luki)
